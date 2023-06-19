@@ -8,11 +8,11 @@ public class AggregateAndFilterArrays {
         int[] arr1 = {-9, 3, 2, -8, 12, -16};
         int[] arr2 = {0, -3, -8, -35, 40, 20, 7};
 
-        Arrays.stream(findEvenNums(arr1, arr2)).forEach(System.out::println);
-        Arrays.stream(findEvenNum2(arr1, arr2)).forEach(System.out::println);
+        Arrays.stream(findEvenNumb(arr1, arr2)).forEach(System.out::println);
+        Arrays.stream(findEvenNumb2(arr1, arr2)).forEach(System.out::println);
     }
 
-    public static int[] findEvenNums(int[] arr1, int[] arr2) {
+    public static int[] findEvenNumb(int[] arr1, int[] arr2) {
         ArrayList<Integer> result = new ArrayList<>();
 
         for (int num: arr1) {
@@ -30,7 +30,7 @@ public class AggregateAndFilterArrays {
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
 
-    public static int[] findEvenNum2(int[] arr1, int[] arr2) {
+    public static int[] findEvenNumb2(int[] arr1, int[] arr2) {
         IntPredicate isEvenPred = num -> num % 2 == 0;
         return Stream.of(arr1, arr2).flatMapToInt(Arrays::stream).filter(isEvenPred).toArray();
     }
