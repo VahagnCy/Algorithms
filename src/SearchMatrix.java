@@ -1,10 +1,12 @@
 public class SearchMatrix {
+
     public static void main(String[] args) {
         int[][] matrix = {{1, 4, 7, 11, 15, 15},
                           {2, 5, 8, 12, 19, 16},
                           {3, 6, 9, 16, 19, 22},
                           {10, 13, 14, 17, 24, 27},
                           {18, 21, 23, 26, 30, 36}};
+
         System.out.println(searchMatrix(matrix, 14));
     }
 
