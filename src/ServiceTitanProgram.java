@@ -1,4 +1,3 @@
-package serviseTitan;
 
 /*
 The task is to unit test IMultiValueHashMap<K, V>
