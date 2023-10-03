@@ -18,9 +18,10 @@ public class ReverseString {
         for (int i = s.length() - 1; i >= 0; i--) {
             reversed.append(s.charAt(i));
         }
+
         return reversed.toString();
     }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
     public static String reverse2(String s) {
         if(s == null || s.isEmpty()) {
             return s;
@@ -29,7 +30,7 @@ public class ReverseString {
         StringBuilder sb = new StringBuilder(s);
         return  sb.reverse().toString();
     }
-
+/////////////////////////////////////////////////////////////////////////////////////////////////
     public static String reverseEachWord(String s) {
         if(s == null || s.isEmpty()) {
             return s;

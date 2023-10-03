@@ -9,7 +9,7 @@ public class ReverseArray {
         reverseInPlace(arr);
         Arrays.stream(arr).forEach(System.out::println);
     }
-
+/////////////////////////////////////////////////////////////////
     public static int[] reverse(int[] arr){
         int[] result = new int[arr.length];
 
@@ -19,7 +19,7 @@ public class ReverseArray {
 
         return result;
     }
-
+/////////////////////////////////////////////////////////////////
     public static void reverseInPlace(int[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
             int temp = arr[i];

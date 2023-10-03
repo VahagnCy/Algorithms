@@ -15,7 +15,7 @@ public class IsAtEvanIndex {
             return false;
         }
 
-        for(int i = 0; i < s.length() / 2 + 1; i = i +2) {
+        for(int i = 0; i < s.length() / 2 + 1; i = i + 2) {
             if(s.charAt(i) == item) {
                 return true;
             }
