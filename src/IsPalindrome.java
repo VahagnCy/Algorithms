@@ -4,7 +4,6 @@ public class IsPalindrome {
         System.out.println(isPalindrome("hello"));
         System.out.println(isPalindrome("madam"));
         System.out.println(isPalindrome(""));
-
     }
     public static Boolean isPalindrome(String s) {
         if(s == null || s.isEmpty()) {
@@ -16,6 +15,6 @@ public class IsPalindrome {
             reversedString.append(s.charAt(i));
         }
 
-        return reversedString.toString().equals(s.toString()) ? true : false;
+        return reversedString.toString().equals(s);
     }
 }
